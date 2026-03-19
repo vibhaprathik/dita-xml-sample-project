@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="sql-performance-overview">
+    <title>SQL performance issue overview</title>
+    <shortdesc>This topic describes a generic performance issue observed after migration of an ERP system to a new server environment.</shortdesc>
+    <conbody>
+        <p>
+            Performance degradation may occur after infrastructure migration even when the business application,
+            database version, and user workflows remain unchanged. In these cases, the issue may be related to
+            environmental factors such as protocol configuration, storage latency, network behaviour, permissions,
+            or query execution plans.
+        </p>
+        <p>
+            Typical symptoms include slow report refresh, delayed data retrieval, long-running queries,
+            and inconsistent response times between users or environments.
+        </p>
+        <p>
+            A structured troubleshooting approach helps separate application-level issues from database,
+            operating system, or network causes.
+        </p>
+    </conbody>
+</concept>
