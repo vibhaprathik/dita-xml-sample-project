@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="sql-performance-checklist">
+    <title>SQL performance review checklist</title>
+    <shortdesc>Use this checklist during initial triage of SQL performance issues after migration.</shortdesc>
+    <refbody>
+        <section>
+            <title>Checklist</title>
+            <simpletable>
+                <sthead>
+                    <stentry>Item</stentry>
+                    <stentry>Review question</stentry>
+                </sthead>
+                <strow>
+                    <stentry>Environment</stentry>
+                    <stentry>Was any infrastructure component changed during migration?</stentry>
+                </strow>
+                <strow>
+                    <stentry>Protocols</stentry>
+                    <stentry>Are SQL connection protocols configured appropriately?</stentry>
+                </strow>
+                <strow>
+                    <stentry>Storage</stentry>
+                    <stentry>Is storage latency contributing to slower database response?</stentry>
+                </strow>
+                <strow>
+                    <stentry>Permissions</stentry>
+                    <stentry>Do current permissions introduce query or access overhead?</stentry>
+                </strow>
+                <strow>
+                    <stentry>Queries</stentry>
+                    <stentry>Are any queries showing regression or abnormal execution times?</stentry>
+                </strow>
+                <strow>
+                    <stentry>Documentation</stentry>
+                    <stentry>Have findings, risks, and actions been formally recorded?</stentry>
+                </strow>
+            </simpletable>
+        </section>
+    </refbody>
+</reference>
