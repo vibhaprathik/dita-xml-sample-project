@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="troubleshoot-sql-performance">
+    <title>Troubleshoot SQL performance after migration</title>
+    <shortdesc>Follow these steps to investigate performance degradation after moving a business system to a new SQL Server environment.</shortdesc>
+    <taskbody>
+        <context>
+            <p>
+                Use this procedure when users report slower performance after migration to a different server,
+                storage platform, or network environment.
+            </p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Confirm the scope of the issue.</cmd>
+                <info>
+                    <p>Identify which transactions, reports, or queries are affected and whether all users see the same behaviour.</p>
+                </info>
+            </step>
+            <step>
+                <cmd>Compare the current environment with the previous environment.</cmd>
+                <info>
+                    <p>Review differences in SQL Server version, storage type, protocol settings, permissions, and network path.</p>
+                </info>
+            </step>
+            <step>
+                <cmd>Check SQL Server connection protocols.</cmd>
+                <info>
+                    <p>Verify whether the system is using Shared Memory, TCP/IP, or Named Pipes, and assess whether the selected protocol is appropriate for the deployment architecture.</p>
+                </info>
+            </step>
+            <step>
+                <cmd>Review query execution behaviour.</cmd>
+                <info>
+                    <p>Use available SQL monitoring tools to identify blocking, expensive queries, or plan regressions.</p>
+                </info>
+            </step>
+            <step>
+                <cmd>Assess permissions and data-access design.</cmd>
+                <info>
+                    <p>Check whether restricted permissions, views, or wrapper queries are adding unnecessary overhead.</p>
+                </info>
+            </step>
+            <step>
+                <cmd>Document findings and define corrective actions.</cmd>
+                <info>
+                    <p>Record observations, probable causes, proposed mitigations, and any further testing required.</p>
+                </info>
+            </step>
+        </steps>
+        <result>
+            <p>
+                You have completed an initial structured assessment of the SQL performance issue and identified
+                areas for further investigation or remediation.
+            </p>
+        </result>
+    </taskbody>
+</task>
